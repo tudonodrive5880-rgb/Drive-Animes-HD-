@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --color-primary: #0095ff;
+  --color-primary-hover: #0077cc;
+  --color-dark-bg: #050608;
+  --color-dark-surface: #161b22;
+  --color-sidebar: #0a0c10;
+  --color-border: #30363d;
+  --color-muted: #8b949e;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #fff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Rows */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
